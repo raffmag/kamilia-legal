@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — Kamilia</title>
-  <meta name="description" content="Kamilia privacy policy. Cycle data stays on your device. No account, no ads, no tracking in this version.">
+  <meta name="description" content="Kamilia privacy policy. Local-first cycle logs. Optional Companion share with limited season snapshot.">
   <link rel="icon" href="logo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,16 +31,16 @@
         </svg>
       </div>
       <h2>Privacy policy</h2>
-      <p class="subtitle">Your cycle stays on your device. Always.</p>
-      <span class="updated">Updated 14 July 2026</span>
+      <p class="subtitle">Local first. Companion optional. You choose what to share.</p>
+      <span class="updated">Updated 21 October 2026</span>
     </div>
 
     <div class="tl-dr">
       <h3>The short version</h3>
       <ul>
-        <li><span class="check">✓</span> No account required in this version</li>
-        <li><span class="check">✓</span> Cycle logs and preferences stay on this device</li>
-        <li><span class="check">✓</span> Nothing is uploaded to our servers (there is no cloud sync yet)</li>
+        <li><span class="check">✓</span> No account required for solo cycle logging</li>
+        <li><span class="check">✓</span> Cycle logs and preferences stay on this device first</li>
+        <li><span class="check">✓</span> Companion is optional: Sign in with Apple + limited season snapshot to one husband</li>
         <li><span class="check">✓</span> We do not sell data or use advertising identifiers</li>
         <li><span class="check">✓</span> You can export a JSON copy or delete everything in the app</li>
         <li><span class="check">✓</span> Face ID / notifications only if you choose them</li>
@@ -55,14 +55,16 @@
         keep worship in view, and see fertility signals as honest estimates.
       </p>
       <p>
-        This version is <strong>local-first</strong>: we do not operate an account system or cloud sync.
+        This product is <strong>local-first</strong> for your diary.
+        Solo use does not require an account.
+        <strong>Companion</strong> is optional: if you choose Share with husband, Sign in with Apple creates a limited session and may sync a reduced season snapshot to one companion — not your full diary.
         Contact: <a href="mailto:support@kamilia.app">support@kamilia.app</a>.
       </p>
     </section>
 
     <section>
       <h3><span class="icon">2</span> What we store on your device</h3>
-      <p>Data is stored only on your iPhone or iPad using Apple’s on-device storage (SwiftData / UserDefaults) under iOS data protection.</p>
+      <p>Core data is stored on your iPhone or iPad using Apple’s on-device storage (SwiftData / UserDefaults) under iOS data protection when the device is locked.</p>
 
       <div class="data-card">
         <div class="data-card-title">Cycle &amp; daily logs</div>
@@ -77,30 +79,50 @@
         <div class="data-card-content">We never store Face ID or Touch ID templates. Unlock is handled entirely by Apple’s LocalAuthentication framework when you enable app lock.</div>
       </div>
       <div class="data-card">
-        <div class="data-card-title">What we do not store</div>
-        <div class="data-card-content">Advertising ID, location history, contacts, photos from your library, HealthKit samples, or payment credentials (no in-app purchases in this version).</div>
+        <div class="data-card-title">What we do not store for ads</div>
+        <div class="data-card-content">Advertising ID, location history, contacts, photos from your library, HealthKit samples, or payment credentials for core solo use.</div>
       </div>
     </section>
 
     <section>
-      <h3><span class="icon">3</span> What leaves your device</h3>
+      <h3><span class="icon">3</span> What may leave your device</h3>
       <div class="info-card soft">
-        <div class="info-card-title">Nothing, in this version</div>
+        <div class="info-card-title">Solo logging</div>
         <div class="info-card-content">
-          Kamilia does not send cycle data, notes, or preferences to our servers or third parties.
-          There is no analytics SDK, crash reporter, or AI API in this release.
+          Solo cycle logging does not upload your diary to our servers.
           If you share an export file (You → Export my data), that share is under your control via the iOS share sheet.
         </div>
       </div>
-      <p>If a future version adds cloud sync, analytics, or AI, we will update this policy, the in-app privacy screen, and App Store privacy labels before shipping.</p>
+      <div class="info-card soft">
+        <div class="info-card-title">Companion (optional)</div>
+        <div class="info-card-content">
+          If you opt into Companion, the app may send a reduced season snapshot and care preferences you enable to our Companion backend (Supabase),
+          visible only to the husband you link. A device token may be registered for optional Companion alerts when that delivery path is available.
+          Full symptom diaries, intimacy notes, and free text are not part of the default Companion snapshot.
+          You can pause or remove sharing anytime.
+        </div>
+      </div>
+      <div class="info-card soft">
+        <div class="info-card-title">Subscriptions (optional)</div>
+        <div class="info-card-content">
+          Apple handles every payment. To show the plans and to confirm a subscription on your devices,
+          the app uses RevenueCat, a subscription service, which receives an anonymous app user ID, your App Store
+          purchase and renewal records if you have any, basic device details such as the iOS version and, like any server, your IP address. RevenueCat never receives
+          your cycle logs, your notes or anything you track. We switch off its advertising identifier collection
+          and its diagnostics.
+        </div>
+      </div>
+      <p>We do not sell personal data. We do not send cycle data to advertising or AI training services in this version.</p>
     </section>
 
     <section>
       <h3><span class="icon">4</span> Health &amp; sensitive data</h3>
       <p>
-        Menstrual and purity-related logs are sensitive. They remain on device.
-        For App Store privacy labels we treat them as Health &amp; Fitness data used only for app functionality,
-        not linked to an identity (no account), and not used for tracking.
+        Menstrual and purity-related logs are sensitive.
+        On device they use iOS data protection when your phone is locked.
+        Companion share is scoped to toggles you enable.
+        For App Store privacy labels we treat health-related logs as used for app functionality;
+        Companion links a limited identity only if you Sign in with Apple for that feature.
       </p>
       <div class="info-card warning">
         <div class="info-card-title">Not medical advice</div>
@@ -119,10 +141,14 @@
       </div>
       <div class="data-card">
         <div class="data-card-title">Notifications</div>
-        <div class="data-card-content">Only if you allow them. Used for optional period-near estimates and evening log nudges. Never for marketing. You can turn reminders off anytime.</div>
+        <div class="data-card-content">Only if you allow them. Used for optional period-near estimates, evening log nudges, and (when available) Companion alerts. Never for marketing. You can turn reminders off anytime.</div>
       </div>
       <div class="data-card">
-        <div class="data-card-title">Not requested</div>
+        <div class="data-card-title">Sign in with Apple</div>
+        <div class="data-card-content">Only if you open Companion. Creates a limited session for invite, share, and snapshot sync — not required for solo logging.</div>
+      </div>
+      <div class="data-card">
+        <div class="data-card-title">Not requested for core solo use</div>
         <div class="data-card-content">Location, camera, microphone, photo library, HealthKit, Bluetooth, tracking (ATT).</div>
       </div>
     </section>
@@ -155,6 +181,15 @@
           <div class="right-content">
             <h4>App lock</h4>
             <p>Optional Face ID / Touch ID so others with your phone cannot open the app.</p>
+          </div>
+        </li>
+        <li>
+          <div class="right-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="right-content">
+            <h4>Companion pause / remove</h4>
+            <p>You → Companion: pause or remove sharing anytime. He cannot expand what you share.</p>
           </div>
         </li>
       </ul>
